@@ -1,0 +1,36 @@
+#tbl-items tr td/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 29, 2019, 2:45:00 PM
+    Author     : iansari
+*/
+.wp-list-table {table-layout: initial!important;}
+.wp-list-table tr th{font-weight: bold;}
+.form-table {width:600px;}
+.form-table tr td{padding:2px;vertical-align: top;}
+.form-table tr td label,#new-quotation-form label{font-weight: bold;margin-top: .5rem;}
+table th#user_id{width:50px}
+.text-red{color: red!important}
+.hide{display:none!important}
+#filter-form{ margin-bottom: -40px;margin-top: 20px;}
+.alert-success{padding: 10px;color: green}
+table tr th,table tr td,p,b,span{font-size:11px;font-family:'Tahoma'}
+table tr td{font-size:11px;font-family:'Tahoma'}
+.fnt11{font-size:10px;font-family:'Tahoma'}
+#tbl-items tr th,#tbl-items tr td{font-size:12px;padding: 3px;}
+.bg-blue{background:#c6c6ea;background-color:#c6c6ea;-webkit-print-color-adjust: exact;}
+@media print {
+    #adminmenumain,#wpfooter,.wpadminbar,.btn-bottom{display: none!important;}
+    #wpcontent{margin: 0!important;}
+}
+#toplevel_page_purchase-order ul,#toplevel_page_quotation ul,#toplevel_page_confirm-order ul,#toplevel_page_container-loading ul,
+#toplevel_page_offloading ul,#toplevel_page_stock-inventory ul,#toplevel_page_delivered ul{display: none;}
+.modal-dialog{margin-top: 75px;}
+.btn-edit img,.btn-view img,.btn-delete img{width:18px}
+.no-border{border: none!important;}
+.current-page{width: 40px!important;}
+.input-location{border: none!important;}
+.input-location{border-bottom: 1px solid #333!important;}

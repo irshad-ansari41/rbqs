@@ -1,0 +1,151 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 29, 2019, 2:45:00 PM
+    Author     : iansari
+*/
+html.wp-toolbar{padding-top: 65px!important;}
+#wp-admin-bar-wp-logo,#wp-admin-bar-comments,#wp-admin-bar-new-content,#wp-admin-bar-wp-mail-smtp-menu,#wp-admin-bar-dwuos-notice{display: none;}
+#wp-admin-bar-site-name {
+    background: url(../images/logo.jpg)!important;
+    background-image: url(../images/logo.jpg)!important;
+    background-size: contain!important;
+    background-repeat: no-repeat!important;
+    background-position: center center!important;
+    width: 200px!important;
+    height: 45px!important;
+    top: 10px;
+
+}
+#wpadminbar {
+    /*background: #1b191c!important;*/
+    height: 65px;
+    /*    -webkit-box-shadow: 5px 0px 30px rgba(0, 0, 0, 0.25), 5px 0px 10px rgba(0, 0, 0, 0.22);
+        -moz-box-shadow: 5px 0px 30px rgba(0, 0, 0, 0.25), 5px 0px 10px rgba(0, 0, 0, 0.22);
+        box-shadow: 5px 0px 30px rgba(0, 0, 0, 0.25), 5px 0px 10px rgba(0, 0, 0, 0.22);*/
+}
+#wpadminbar .quicklinks .ab-empty-item, #wpadminbar .quicklinks a, #wpadminbar .shortlink-input {
+    height: 65px;
+    font-size:14px;
+    line-height: 4.5;
+}
+#wp-admin-bar-site-name a, #wp-admin-bar-site-name .ab-sub-wrapper,#wp-admin-bar-updates{display: none!important;}
+ul#adminmenu div.wp-menu-name {
+    padding: 8px 10px 8px 0px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    font-size:12px;
+}
+ul#adminmenu a{text-transform: uppercase;}
+#adminmenu, #adminmenu .wp-submenu, #adminmenuback, #adminmenuwrap {
+    width: 260px;
+
+    /*background-color: #1c1a1d!important;*/
+}
+#adminmenu .wp-submenu{
+    left: 260px;
+    width: 260px!important;
+}
+#wpcontent, #wpfooter{
+    margin-left: 260px;
+}
+#tbl-items tr td
+table.wp-list-table {table-layout: initial!important;}
+table.wp-list-table tr th,table.wp-list-table tr td{padding: 8px 5px!important;font-size: 12.5px}
+.wp-list-table tr th{font-weight: bold;}
+.form-table {width:600px;}
+.form-table tr td{padding:5px;}
+.form-table tr td label,#new-quotation-form label{font-weight: bold;margin-top: .5rem;}
+table th#user_id{width:50px}
+.text-red{color: red!important}
+.hide{display:none!important}
+#filter-form{ margin-bottom: -40px;margin-top: 20px;}
+.alert-success{padding: 10px;color: green}
+#tbl-items tr th,#tbl-items tr td{font-size:12px;padding: 3px;}
+.bg-blue{background:#c5d9f1;background-color:#c5d9f1;-webkit-print-color-adjust: exact;}
+.bg-gainsboro{background:gainsboro;background-color:gainsboro;-webkit-print-color-adjust: exact;}
+@media print {
+    #adminmenumain,#wpfooter,.wpadminbar,.btn-bottom{display: none!important;}
+    #wpcontent{margin: 0!important;}
+}
+.modal-dialog{margin-top: 75px;}
+.btn-edit img,.btn-view img,.btn-delete img{width:18px}
+.no-border{border: none!important;}
+.current-page{width: 40px!important;}
+.input-location{border: none!important;}
+.input-location{border-bottom: 1px solid #333!important;}
+li#toplevel_page_roche-bobois ul li:last-child{display:none;}
+#open-close-menu{font-size:30px;margin-right: 10px;margin-top: 9px;}
+.red-color{color:red!important;}
+#menu-pages,
+#menu-posts,
+#menu-comments,
+#menu-appearance,
+#menu-tools{display: none;}
+div.wp-menu-image:before{padding: 7px 0;}
+.table-view-list{display: table;}
+
+input, select {font-size:12.1px!important;}
+.current-page {min-width: 40px!important; width: 40px!important;}
+#adminmenu li.wp-menu-separator{display: none}
+table.form-table input[type=text], table.form-table input[type=search], table.form-table input[type=tel], table.form-table input[type=time], table.form-table input[type=url],
+table.form-table input[type=week], table.form-table input[type=password], table.form-table input[type=color], table.form-table input[type=datetime],
+table.form-table input[type=datetime-local], table.form-table input[type=email], table.form-table input[type=month], table.form-table input[type=number], table.form-table select,
+table.form-table textarea{min-width: 200px!important;max-width: 480px;}
+input[type=date],input[type=time]{max-width: 200px;}
+select.chosen-select:invalid{ height: 0px !important; opacity: 0 !important; position: absolute !important; display: flex !important; width:1px!important; }
+.chosen-container{min-width:250px!important;width:100%!important;}
+body.upload-php.eml-grid #wpbody-content > .wrap {
+    position: absolute;
+    left: 100px;
+    top: 30px;
+    right: 0;
+    bottom: 0;
+}
+.media-sidebar .eml-toggle-collapse{padding:3px 10px 17px 10px!important;}
+.ui-dialog .ui-dialog-content{width: 100%!important;}
+.ui-dialog .ui-dialog-titlebar{padding-top: 0!important;}
+#page-inner-content{overflow-x: scroll;}
+input.year{padding-left:8px;min-height: 30px;}
+
+.AVAILABLE{}
+.RESERVED{background-color:red!important;color:#fff!important;}
+.DELIVERED{background-color:green!important;color:#fff!important;}
+.DAMAGED{}
+.USED{}
+
+#toplevel_page_purchase-order ul,
+#toplevel_page_confirm-order ul,
+#toplevel_page_quotation ul,
+#toplevel_page_container-loading ul,
+#toplevel_page_offloading  ul li:nth-child(2),
+
+#toplevel_page_delivered ul, 
+#toplevel_page_showroom-order ul,
+#toplevel_page_project-job-order ul,
+#toplevel_page_my-account ul li.wp-first-item
+{display: none;}
+
+#toplevel_page_order-tracker ul li:nth-child(2),
+#toplevel_page_order-tracker ul li:nth-child(4),
+
+#toplevel_page_quality-control-report ul,
+
+#toplevel_page_stock-inventory ul li:nth-child(1),
+#toplevel_page_stock-inventory ul li:nth-child(2),
+
+#toplevel_page_human-resource ul li:nth-child(1),
+#toplevel_page_human-resource ul li:nth-child(2),
+
+#toplevel_page_generate-report ul li:nth-child(1),
+#toplevel_page_generate-report ul li:nth-child(2),
+
+#toplevel_page_delivery-note-list ul,
+
+#toplevel_page_import-declaration ul,
+
+#toplevel_page_receipt ul li:nth-child(2){display: none;}

@@ -1,0 +1,193 @@
+/**
+ * Login CSS
+ */
+html, body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /*background: #f6f6f6 !important;*/
+    color: #3d3d3d;
+    font-family: 'Futura Std', "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+html,body {
+    background: #131313 url(../images/mainBackground.gif) 0 0 repeat-x;
+}
+#outer-login {
+    width: 100%; margin:100px auto 0; padding: 10px 65px; background: #19181b; text-align: center; box-sizing: border-box;
+}
+#login {
+    margin:auto; padding:20px 20px 40px; background:#141414; margin-top: 100px;
+}
+.login a {
+    color: #3d3d3d
+}
+.login a:hover {
+    color: #3d3d3d
+}
+.login h1 {
+    margin: 20px auto 40px auto;
+}
+.login form {
+    margin-top: 0px;
+    margin-left: 0;
+    padding: 0;
+    background: #fff;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    text-align: left;
+    border: none;
+}
+.login form .input, .login input[type=text] {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size:14px;
+    line-height: 1.42857143;
+    color: #fff;
+    background-color: #141414;
+    background-image: none;
+    border: 1px solid #000;
+    border-radius: 0px;
+    outline: 0;
+    box-shadow: none;
+    font-family: 'Calibri', Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    -webkit-box-shadow: inset 0px 3px 3px 0px #000;
+    box-shadow: inset 0px 3px 3px 0px #000;
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+#login form p.forgetmenot {
+    float: none;
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.login label {
+    font-size:0;
+    display: block;
+}
+.login input[type=checkbox]:focus {
+    border-color: #999;
+    -webkit-box-shadow: 0 0 2px rgba(199, 199, 199, 0.8);
+    box-shadow: 0 0 2px rgba(199, 199, 199, 0.8);
+}
+.login input[type=checkbox]:checked:before {
+    color: #c90e2b;
+}
+.login .button-primary {
+    display: block;
+    width: 100%;
+    float: none;
+    background-color: #c90e2b;
+    border-color: #c90e2b;
+    outline: none;
+    z-index: 1;
+    border-radius: 0;
+    position: relative;
+    padding: 8px 12px;
+    font-weight: 600;
+    transition: all 0.5s;
+    font-size:12px;
+    vertical-align: middle;
+    color: #fff;
+    text-shadow: none;
+    text-transform: uppercase;
+    ;
+    font-weight: 600;
+}
+.login .button-primary:focus, .login .button-primary:hover, .login .button-primary:active {
+    background-color: #000;
+    color: #fff;
+    border-color: #000;
+    outline: none;
+    z-index: 1;
+    -webkit-box-shadow: 0 1px 0 #3d3d3d, 0 0 2px 1px #ccc;
+    box-shadow: 0 1px 0 #3d3d3d, 0 0 2px 1px #ccc;
+}
+.login #nav {
+    margin-top: 10px;
+}
+.login #backtoblog {
+    display: none;
+}
+.login #backtoblog a, .login #nav a {
+    color: #3d3d3d;
+}
+.login #backtoblog a:hover, .login #nav a:hover {
+    color: #c90e2b;
+}
+.login #login_error, .login .message {
+    border-left: 4px solid #fff;
+    margin-bottom: 10px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background-color: #c90e2b;
+    color:#fff;
+}
+.login #login_error {
+    border-left: 4px solid #c90e2b;
+}
+.login #pass-strength-result {
+    margin: 5px 5px 16px 0;
+    border: 0
+}
+body.login.wp-core-ui #login > form {
+    background-color: #ffffff;
+}
+.wp-core-ui .button-group.button-large .button, .wp-core-ui .button.button-large {
+    line-height: 28px !important;
+    padding: 1px 12px 2px !important;
+    height: 30px !important;
+    border: none !important;
+}
+.wp-core-ui .button-group.button-large .button:hover, .wp-core-ui .button.button-large:hover {
+    line-height: 28px !important;
+    padding: 1px 12px 2px !important;
+    height: 30px !important;
+    border: none !important;
+}
+body.wp-core-ui .button-primary {
+    height: auto !important;
+    background: #c90e2b !important;
+    color: #ffffff !important;
+}
+body.wp-core-ui .button-primary:hover {
+    height: auto!important;
+    background: #000000 !important;
+    color: #ffffff !important;
+}
+.login label {
+    font-size:13px !important;
+    display: inline-block !important;
+}
+
+@media (max-width: 767px) {
+    #login {
+        width: 90%;
+        left: 5%;
+        margin-left: 0;
+    }
+}
+#login form p.submit{width:150px;}
+#login h1 a{height: 68px!important;}
+body.login.wp-core-ui #login > form{background: transparent!important;}
+.login #nav{    width: 150px;
+                margin-top: -23px;
+                margin-left: 174px;}
+body.login #login h1 a{height: 45px!Important; max-width: 410px!important;background-position:center right!important}
+body.login.wp-core-ui{background: transparent!important;}
+footer{position: fixed; bottom: 0; text-align: center; width: 100%; padding: 10px!important; background: #000;}
+body.login #login h1 a {
+    background-image: url(../images/logo.jpg)!important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: auto;
+    height: 80px;
+    max-width: 350px;
+}
+body.login.wp-core-ui label, body.login.wp-core-ui a, body.login.wp-core-ui #backtoblog a, body.login.wp-core-ui #nav a {
+    color: #fff;
+}
