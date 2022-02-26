@@ -654,21 +654,7 @@ function mail_to_link($to, $subject, $content, $attchment) {
     return "mailto:$to?subject={$sub}&body={$cont}&attachment={$attch}";
 }
 
-/**
- * 
- * @param type $phpmailer
- */
-function set_phpmailer_details($phpmailer) {
-    $phpmailer->isSMTP();
-    $phpmailer->Host = 'exmail.emirates.net.ae'; //gmail smtp host
-    $phpmailer->SMTPAuth = true;
-    $phpmailer->Port = 465;
-    $phpmailer->Username = 'noreply@roche-bobois.ae';
-    $phpmailer->Password = 'rbnoreply00';
-    $phpmailer->SMTPSecure = 'ssl';
-    $phpmailer->SMTPAutoTLS = true;
-    $phpmailer->SMTPDebug = get_option('debug_phpmailer') ? true : false;
-}
+
 
 if (get_option('load_phpmailer')) {
     add_action('phpmailer_init', 'set_phpmailer_details');
